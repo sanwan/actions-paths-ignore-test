@@ -1,0 +1,12 @@
+name: CI
+
+on:
+  push:
+    paths-ignore:
+    - '**/README.md'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "spending cpu"
